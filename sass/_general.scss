@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cont{
+    max-width: 1440px;
+    margin: 0 auto;
+    > div{
+        width: 100%;
+    }
+}
+a{
+    text-decoration: none; 
+    color: black;
+}
+ul{
+    list-style: none;
+}
+button:hover{
+    cursor: pointer;
+}

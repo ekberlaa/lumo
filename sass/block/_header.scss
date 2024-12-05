@@ -1,0 +1,38 @@
+.header{
+    background-color: #fff;
+    position: fixed;
+    font-size: 14px;
+    z-index: 999;
+    width: 100%;
+}
+.header::before{
+    content: '';
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: $mainclr;
+}
+.header__inner{
+    @include flex;
+    height: 120px;
+}
+.header__items{
+    @include flex;
+    font-size: 1em;
+    text-wrap: nowrap;
+    height: 100%;
+    .header__item{
+        display: flex;
+        align-items: center;
+        padding: 0 28px;
+        height: 100%;
+        cursor: pointer;
+        transition: all 0.1s ease-out;
+    }
+    .header__item:hover{
+        background: rgba(14, 126, 255, 0.25);
+    }
+}

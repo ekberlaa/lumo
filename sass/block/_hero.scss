@@ -1,0 +1,54 @@
+.hero{
+    font-size: 12px;
+    position: relative;
+    z-index: 1;
+    border: 1px solid red;
+    padding-top: 180px;
+}
+.hero::before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: $mainclr;
+}
+.hero__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .btn{
+        font-size: 12px;
+    }
+    .btn:hover{
+        color: $clr;
+    }
+}
+.hero__text{
+    width: 35%;
+    a{
+        display: block;
+        margin-top: 54px;
+        font-size: 1em;
+        font-weight: 600;
+        letter-spacing: 5px;
+    }
+}
+.hero__top{
+    margin-bottom: 54px;
+    font-weight: 900;
+}
+.hero__btn{
+    margin-bottom: 72px;
+    font-size: 2em;
+}
+.hero__title{
+    font-size: 1em;
+    font-weight: 600;
+}
+.hero__subtitle, p{
+    font-size: 3.4em;
+    display: inline;
+}
